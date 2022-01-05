@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/Layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./js/general.js"></script>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Eurotrancitura</title>
+</head>
+
+<body>
+    <header class="pr">
+        <span class="menu"><i class="material-icons" style="font-size: 40px !important;">menu</i></span>
+        <img src="./images/LogoEuro.png" alt="" class="logoEuro">
+        <div class="infoUser">
+            <div class="row">
+                <div class="col-md-4">
+                    <li>
+                        Nombre del equipo <br>
+                        <b>
+                            Prensa 4
+                        </b>
+                    </li>
+                </div>
+                <div class="col-md-4">
+                    <li>
+                        Martes 22 de octubre de 2021 3:30 p.m.
+                    </li>
+                </div>
+                <div class="col-md-4">
+                    <div class="row menuInfo">
+                        <div class="col-3">
+                            <img class="user" src="./images/user.png" alt="">
+                        </div>
+                        <li class="col-8" style="margin: 10px 0px 0px 0px;">
+                            Juan Perez
+                            <ul>
+                                <li><a href="">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="keep">
+        <ul>
+            <li>
+                <a href="./Equipos">
+                    <img class="iconMenu" src="./images/iconos_inactivos-01.png" alt="">
+                    Equipos
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img class="iconMenu" src="./images/iconos_inactivos-02.png" alt="">
+                    Buscar
+                </a>
+            </li>
+            <li>
+                <a href="./GestionUsuarios.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-03.png" alt="">
+                    Gestión de usuarios
+                </a>
+            </li>
+            <li>
+                <a href="./Eficiencia.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-04.png" alt="">
+                    Eficiencia de los equipos
+                </a>
+            </li>
+            <li>
+                <a href="./Analisis.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-05.png" alt="">
+                    Indicadores de negocio
+                </a>
+            </li>
+            <li>
+                <a href="./Interfaz.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-06.png" alt="">
+                    Interfaz de operario
+                </a>
+            </li>
+            <li>
+                <a href="./Reports.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-07.png" alt="">
+                    Reportes
+                </a>
+            </li>
+            <li>
+                <a href="./CargaChecksheets.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-08.png" alt="">
+                    Carga de Checksheets
+                </a>
+            </li>
+            <li>
+                <a href="./Configuracion.html">
+                    <img class="iconMenu" src="./images/iconos_inactivos-09.png" alt="">
+                    Configuración
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <section class="main">
+        <article class="pr">
+            <div class="container-fluit">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="color: #007878;">Tablero de indicadores</h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row" style="margin-bottom: 8px;">
+                            <div class="boxCon">
+                                <div class="row">
+                                    <div class="col-sm-9 mb-2">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="contrasena">Turno</label>
+                                                    <select name="rol" id="rol" class="selectEuro">
+                                                        <option value="Administrador">Equipo 1</option>
+                                                        <option value="Supervisor">Equipo 2</option>
+                                                        <option value="Operario">Equipo 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="fechaInicio">Fecha de inicio</label>
+                                                    <input type="date" class="selectEuro" id="fechaInicio" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="fechaFinal">Fecha final</label>
+                                                    <input type="date" class="selectEuro" id="fechaFinal" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="wrapperInputs">
+                                            <button type="submit" class="buttonEuro right" style="margin: 0px 2px;">Consultar</button>
+                                            <a href="./SeleccionarIndicadores.html" type="submit" class="buttonEuro right">Seleccionar KPIs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row" style="margin-bottom: 8px;">
+                            <div class="wrapperInputs">
+                                <center><img src="./images/pan/Indicadores.png" style="width: 100%;" alt=""></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            © 2021 Eurotrancitura. Sistema de Gestión OEE de planta. Powered by Grupo AC
+        </footer>
+    </section>
+
+</body>
+
+</html>
