@@ -309,6 +309,8 @@ caption {
 }
 
 th {
+  background: #3cb4a5 !important;
+  color: white;
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
@@ -322,7 +324,10 @@ th {
   text-align: center;
   border-color: inherit;
   border-style: solid;
+  border-left: 1px solid white;
   border-width: 0;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
 }
 
 label {
@@ -1970,17 +1975,19 @@ progress {
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
-  border-bottom-width: 1px;
+  /* border-bottom-width: 1px; */
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 .table > tbody {
   vertical-align: inherit;
+  background: #afe0d6;
+  color: #007878;
 }
 .table > thead {
   vertical-align: bottom;
 }
 .table > :not(:first-child) {
-  border-top: 2px solid currentColor;
+  border-top: 2px solid white;
 }
 
 .caption-top {
