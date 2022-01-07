@@ -147,7 +147,8 @@
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="wrapperInputs">
-                                            <button type="submit" class="buttonEuro right" style="margin: 0px 3px;">Consultar</button>
+                                            <button type="submit" class="buttonEuro right"
+                                                style="margin: 0px 3px;">Consultar</button>
                                             <button type="submit" class="buttonEuro right">Seleccionar KPIs</button>
                                         </div>
                                     </div>
@@ -229,7 +230,8 @@
                         </div>
                         <div class="wrapperInputs">
                             <button type="submit" class="buttonEuro right">Unir</button>
-                            <button type="submit" class="buttonEuro right" style="margin-right:2px;">Justificación múltiple</button>
+                            <button type="submit" class="buttonEuro right" data-bs-toggle="modal"
+                                data-bs-target="#tableroControl">Justificación múltiple</button>
                         </div>
                     </div>
                 </div>
@@ -239,7 +241,86 @@
             © 2021 Eurotrancitura. Sistema de Gestión OEE de planta. Powered by Grupo AC
         </footer>
     </section>
-
+    <!-- Modal -->
+    <div class="modal fade" id="tableroControl" tabindex="-1" role="dialog" aria-labelledby="tableroControlLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="min-width: 900px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tableroControlLabel">Justificar</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" style="width: 29.2%;">Rango de tiempo seleccionado</label>
+                                <span class="selectEuro dis" style="width: 70.8%;">02/08/2011 03:18:01 p.m - 02/08/2011
+                                    03:34:01 p.m</span>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" style="width: 29.2%;">Estado seleccionado</label>
+                                <span class="selectEuro dis" style="width: 70.8%;">montacarguista no retira pp_pt de la
+                                    línea de producción</span>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" style="width: 29.2%;">Estado nuevo seleccionado</label>
+                                <span class="inputEuro" style="width: 70.8%;">Lorem Ipsum / Empaque / Pasta Larga /
+                                    Empacadora 02</span>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName bordersTop" style="width: 55%;">Comentario</label>
+                                <textarea class="inputEuro width" rows="2"
+                                    style="border-radius: 0px 6px 6px 6px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Paros programados ORIG</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #000c9b; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Paros no programados</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #ed1c24; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Tiempo neto</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #39b54a; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Paros programados</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #f15a24; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs">
+                                <button type="button" class="buttonEuro right" onclick="fnTiemposInactividad();"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="buttonEuro right" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

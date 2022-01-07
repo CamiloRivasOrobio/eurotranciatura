@@ -112,24 +112,166 @@
             <div class="container-fluit">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="color: #007878;">Reportes OEE</h2>
+                        <h2 style="color: #007878;">Gestión de tiempos de inactividad</h2>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
                             <div class="boxCon">
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-9 mb-2">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="contrasena">Turno</label>
+                                                    <select name="rol" id="rol" class="selectEuro">
+                                                        <option value="Administrador">Equipo 1</option>
+                                                        <option value="Supervisor">Equipo 2</option>
+                                                        <option value="Operario">Equipo 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="fechaInicio">Fecha de inicio</label>
+                                                    <input type="date" class="selectEuro" id="fechaInicio" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="fechaFinal">Fecha final</label>
+                                                    <input type="date" class="selectEuro" id="fechaFinal" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
                                         <div class="wrapperInputs">
-                                            <a href="./ReportesOEE.html" class="inputName width borderAll mb-2">Reportes
-                                                OEE</a>
-                                            <a href="./RegistroEventos.html"
-                                                class="inputName width borderAll mb-2">Registro de eventos</a>
-                                            <a href="./Reportes.html"
-                                                class="inputName width borderAll mb-2">Reportes</a>
+                                            <button type="submit" class="buttonEuro right">Consultar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-2" id="paros">
+                        <div class="boxTitle">Paros programados</div>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Tiempo inicial</th>
+                                        <th scope="col">Tiempo final</th>
+                                        <th scope="col">Nombre de categoria de tiempo</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Categoria</th>
+                                        <th scope="col">Razón</th>
+                                        <th scope="col">Detalle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <center><input class="form-check-input" type="checkbox" id="Administrador">
+                                            </center>
+                                        </td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>S1 ERROR</td>
+                                        <td>00:01:00</td>
+                                        <td>00:01:00</td>
+                                        <td>00:01:00</td>
+                                        <td>00:01:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="wrapperInputs">
+                            <center>
+                                <button type="submit" class="buttonEuro" data-bs-toggle="modal"
+                                    data-bs-target="#crearParo">Crear paro programado</button>
+                                <button type="submit" class="buttonEuro" id="modificarTiempos"
+                                    style="margin-right:2px;">Modificar</button>
+                                <button type="submit" class="buttonEuro" data-bs-toggle="modal"
+                                    data-bs-target="#ParoProgramado" style="margin-right:2px;">Borrar</button>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 d-none" id="modificar">
+                        <div class="table-responsive">
+                            <table class="table table-sm table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Tiempo inicial</th>
+                                        <th scope="col">Tiempo final</th>
+                                        <th scope="col">Categoria temporal</th>
+                                        <th scope="col">Nivel 1</th>
+                                        <th scope="col">Razón</th>
+                                        <th scope="col">Detalle</th>
+                                        <th scope="col">Comentario</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <center><input class="form-check-input" checked type="checkbox"
+                                                    id="Administrador">
+                                            </center>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="date" value="02/08/2011" class="selectEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="date" value="02/08/2011" class="selectEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="text" value="Tiempo neto" class="inputEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="text" value="Tiempo neto" class="inputEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="text" value="Tiempo neto" class="inputEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="text" value="Tiempo neto" class="inputEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapperInputs">
+                                                <input type="text" value="Tiempo neto" class="inputEuro width borderAll"
+                                                    id="fechaInicio" type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="wrapperInputs">
+                            <button type="submit" class="buttonEuro right"
+                                onclick="fnTiemposInactividad();">Regresar</button>
+                            <button type="submit" class="buttonEuro right" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" style="margin-right:2px;">Modificar</button>
+                            <button type="submit" class="buttonEuro right" onclick="fnTiemposInactividad();"
+                                style="margin-right:2px;">Guardar</button>
                         </div>
                     </div>
                 </div>
@@ -139,6 +281,161 @@
             © 2021 Eurotrancitura. Sistema de Gestión OEE de planta. Powered by Grupo AC
         </footer>
     </section>
+    <!-- Modal Eliminar -->
+    <div class="modal fade" id="ParoProgramado" tabindex="-1" role="dialog" aria-labelledby="ParoProgramadoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ParoProgramadoLabel">¿Desea borrar el registro seleccionado?</h5>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <div class="wrapperInputs">
+                        <center>
+                            <button type="button" class="buttonEuro" data-bs-dismiss="modal">Aceptar</button>
+                            <button type="button" class="buttonEuro" data-bs-dismiss="modal">Cancelar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Modificar paro -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modificar paro programado</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapperInputs mb-2">
+                        <label class="inputName" for="contrasena">Paros programados ORIG</label>
+                        <select name="rol" id="rol" class="selectEuro" style="background-color: #000c9b; color: #fff;">
+                            <option value="Administrador">Equipo 1</option>
+                            <option value="Supervisor">Equipo 2</option>
+                            <option value="Operario">Equipo 3</option>
+                        </select>
+                    </div>
+                    <div class="wrapperInputs mb-2">
+                        <label class="inputName" for="contrasena">Paros no programados</label>
+                        <select name="rol" id="rol" class="selectEuro" style="background-color: #ed1c24; color: #fff;">
+                            <option value="Administrador">Equipo 1</option>
+                            <option value="Supervisor">Equipo 2</option>
+                            <option value="Operario">Equipo 3</option>
+                        </select>
+                    </div>
+                    <div class="wrapperInputs mb-2">
+                        <label class="inputName" for="contrasena">Tiempo neto</label>
+                        <select name="rol" id="rol" class="selectEuro" style="background-color: #39b54a; color: #fff;">
+                            <option value="Administrador">Equipo 1</option>
+                            <option value="Supervisor">Equipo 2</option>
+                            <option value="Operario">Equipo 3</option>
+                        </select>
+                    </div>
+                    <div class="wrapperInputs mb-2">
+                        <label class="inputName" for="contrasena">Paros programados</label>
+                        <select name="rol" id="rol" class="selectEuro" style="background-color: #f15a24; color: #fff;">
+                            <option value="Administrador">Equipo 1</option>
+                            <option value="Supervisor">Equipo 2</option>
+                            <option value="Operario">Equipo 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="wrapperInputs">
+                        <center>
+                            <button type="button" class="buttonEuro" onclick="fnTiemposInactividad();"
+                                data-bs-dismiss="modal">Modificar</button>
+                            <button type="button" class="buttonEuro" data-bs-dismiss="modal">Cancelar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Crear paro programado-->
+    <div class="modal fade" id="crearParo" tabindex="-1" role="dialog" aria-labelledby="crearParoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="min-width: 900px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="crearParoLabel">Justificar</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" style="width: 29.2%;">Rango de tiempo seleccionado</label>
+                                <span class="selectEuro dis" style="width: 70.8%;">02/08/2011 03:18:01 p.m - 02/08/2011
+                                    03:34:01 p.m</span>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" style="width: 29.2%;">Estado seleccionado</label>
+                                <span class="selectEuro dis" style="width: 70.8%;">montacarguista no retira pp_pt de la
+                                    línea de producción</span>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" style="width: 29.2%;">Estado nuevo seleccionado</label>
+                                <span class="inputEuro" style="width: 70.8%;">Lorem Ipsum / Empaque / Pasta Larga /
+                                    Empacadora 02</span>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName bordersTop" style="width: 55%;">Comentario</label>
+                                <textarea class="inputEuro width" rows="2"
+                                    style="border-radius: 0px 6px 6px 6px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Paros programados ORIG</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #000c9b; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Paros no programados</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #ed1c24; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Tiempo neto</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #39b54a; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs mb-2">
+                                <label class="inputName" for="contrasena">Paros programados</label>
+                                <select name="rol" id="rol" class="selectEuro"
+                                    style="background-color: #f15a24; color: #fff;">
+                                    <option value="Administrador">Equipo 1</option>
+                                    <option value="Supervisor">Equipo 2</option>
+                                    <option value="Operario">Equipo 3</option>
+                                </select>
+                            </div>
+                            <div class="wrapperInputs">
+                                <button type="button" class="buttonEuro right" onclick="fnTiemposInactividad();"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="buttonEuro right" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
