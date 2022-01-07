@@ -52,7 +52,7 @@
     <aside class="keep">
         <ul>
             <li>
-                <a href="./Equipos">
+                <a href="./Equipos.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-01.png" alt="">
                     Equipos
                 </a>
@@ -64,43 +64,43 @@
                 </a>
             </li>
             <li>
-                <a href="./GestionUsuarios.html">
+                <a href="./GestionUsuarios.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-03.png" alt="">
                     Gestión de usuarios
                 </a>
             </li>
             <li>
-                <a href="./Eficiencia.html">
+                <a href="./Eficiencia.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-04.png" alt="">
                     Eficiencia de los equipos
                 </a>
             </li>
             <li>
-                <a href="./Analisis.html">
+                <a href="./Analisis.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-05.png" alt="">
                     Indicadores de negocio
                 </a>
             </li>
             <li>
-                <a href="./TableroControl.html">
+                <a href="./TableroControl.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-06.png" alt="">
                     Interfaz de operario
                 </a>
             </li>
             <li>
-                <a href="./Reports.html">
+                <a href="./Reports.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-07.png" alt="">
                     Reportes
                 </a>
             </li>
             <li>
-                <a href="./CargaChecksheets.html">
+                <a href="./CargaChecksheets.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-08.png" alt="">
                     Carga de Checksheets
                 </a>
             </li>
             <li>
-                <a href="./Configuracion.html">
+                <a href="./Configuracion.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-09.png" alt="">
                     Configuración
                 </a>
@@ -112,13 +112,13 @@
             <div class="container-fluit">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="color: #007878;">Tablero de monitoreo de línea</h2>
+                        <h2 style="color: #007878;">Registro de eventos</h2>
                     </div>
                     <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
                             <div class="boxCon">
                                 <div class="row">
-                                    <div class="col-sm-9 mb-2">
+                                    <div class="col-sm-10">
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="wrapperInputs">
@@ -144,9 +144,41 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-2">
                                         <div class="wrapperInputs">
                                             <button type="submit" class="buttonEuro right">Consultar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="tipo">Tipo</label>
+                                                    <select name="tipo" id="tipo" class="selectEuro">
+                                                        <option value="T">Todos</option>
+                                                        <option value="2">Opcion 2</option>
+                                                        <option value="3">Opcion 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="modulo">Módulo a analizar</label>
+                                                    <select name="modulo" id="modulo" class="selectEuro">
+                                                        <option value="T">Todos</option>
+                                                        <option value="2">Opcion 2</option>
+                                                        <option value="3">Opcion 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="buscar">Buscar</label>
+                                                    <input type="text" class="selectEuro" id="buscar" type="text">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -154,24 +186,58 @@
                         </div>
                     </div>
                     <div class="col-sm-12">
-                        <div class="row" style="margin-bottom: 8px;">
-                            <div class="boxCon">
-                                <div class="wrapperInputs">
-                                    <label class="inputName borderAll left" style="font-size: 20px;">Prensa 1</label>
-                                    <button type="submit" class="buttonEuro right" style="margin-right:2px;">Selecionar KPIs</button>
-                                    <center><img src="./images/pan/Control.png" style="width: 100%;" alt=""></center>
-                                </div>
-                            </div>
+                        <div class="boxTitle">Prueba</div>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tiempo inicial</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Módulo</th>
+                                        <th scope="col">Tipo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>02/08/2011 - 03:18:01 p.m</th>
+                                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </td>
+                                        <td>Lorem ipsum</td>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/08/2011 - 03:18:01 p.m</th>
+                                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </td>
+                                        <td>Lorem ipsum</td>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/08/2011 - 03:18:01 p.m</th>
+                                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </td>
+                                        <td>Lorem ipsum</td>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="row" style="margin-bottom: 8px;">
-                            <div class="boxCon">
-                                <div class="wrapperInputs">
-                                    <label class="inputName borderAll left" style="font-size: 20px;">Prensa 2</label>
-                                    <button type="submit" class="buttonEuro right" style="margin-right:2px;">Selecionar KPIs</button>
-                                    <center><img src="./images/pan/Control.png" style="width: 100%;" alt=""></center>
-                                </div>
-                            </div>
-                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -180,6 +246,10 @@
             © 2021 Eurotrancitura. Sistema de Gestión OEE de planta. Powered by Grupo AC
         </footer>
     </section>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        Launch demo modal
+    </button>-->
 
 </body>
 

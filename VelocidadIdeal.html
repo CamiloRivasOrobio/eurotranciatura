@@ -82,7 +82,7 @@
                 </a>
             </li>
             <li>
-                <a href="./Interfaz.html">
+                <a href="./TableroControl.html">
                     <img class="iconMenu" src="./images/iconos_inactivos-06.png" alt="">
                     Interfaz de operario
                 </a>
@@ -112,13 +112,13 @@
             <div class="container-fluit">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="color: #007878;">Tablero de control de máquina</h2>
+                        <h2 style="color: #007878;">Registro de velocidad inicial</h2>
                     </div>
                     <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
                             <div class="boxCon">
                                 <div class="row">
-                                    <div class="col-sm-9">
+                                    <div class="col-sm-9 mb-2">
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="wrapperInputs">
@@ -151,48 +151,40 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-9">
+                                    <div class="col-sm-9 mb-2">
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="wrapperInputs">
-                                                    <label class="inputName" for="contrasena">Nivel 1</label>
+                                                    <label class="inputName" for="contrasena">Seleccionar
+                                                        contadores</label>
                                                     <select name="rol" id="rol" class="selectEuro">
-                                                        <option value="Administrador">Paros no programados</option>
-                                                        <option value="Supervisor">Equipo 2</option>
-                                                        <option value="Operario">Equipo 3</option>
+                                                        <option value="Administrador">Contador 1</option>
+                                                        <option value="Supervisor">Contador 2</option>
+                                                        <option value="Operario">Contador 3</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="wrapperInputs">
-                                                    <label class="inputName" for="contrasena">Nivel 2</label>
+                                                    <label class="inputName" for="contrasena">Seleccionar Línea</label>
                                                     <select name="rol" id="rol" class="selectEuro">
-                                                        <option value="Administrador">Prensa</option>
-                                                        <option value="Supervisor">Equipo 2</option>
-                                                        <option value="Operario">Equipo 3</option>
+                                                        <option value="Administrador">Linea 1</option>
+                                                        <option value="Supervisor">Linea 2</option>
+                                                        <option value="Operario">Linea 3</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="wrapperInputs">
-                                                    <label class="inputName" for="contrasena">Nivel 3</label>
+                                                    <label class="inputName" for="contrasena">Seleccionar
+                                                        Equipos</label>
                                                     <select name="rol" id="rol" class="selectEuro">
-                                                        <option value="Administrador">Falla eléctrica</option>
+                                                        <option value="Administrador">Equipo 1</option>
                                                         <option value="Supervisor">Equipo 2</option>
                                                         <option value="Operario">Equipo 3</option>
                                                     </select>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="wrapperInputs">
-                                            <label class="inputName" for="contrasena">Seleccionar Equipos</label>
-                                            <select name="rol" id="rol" class="selectEuro">
-                                                <option value="Administrador">Equipo 1</option>
-                                                <option value="Supervisor">Equipo 2</option>
-                                                <option value="Operario">Equipo 3</option>
-                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -200,20 +192,63 @@
                         </div>
                     </div>
                     <div class="col-sm-12">
-                        <div class="row" style="margin-bottom: 8px;">
-                            <div class="wrapperInputs">
-                                <center><img src="./images/pan/EstadoMaquina.png" style="width: 100%;" alt=""></center>
-                            </div>
+                        <div class="boxTitle"></div>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Nombre de velocidad</th>
+                                        <th scope="col">Valor de velocidad</th>
+                                        <th scope="col">Tiempo inicial</th>
+                                        <th scope="col">Tiempo final</th>
+                                        <th scope="col">Comentarios</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <center><input class="form-check-input" type="checkbox" id="Administrador">
+                                            </center>
+                                        </td>
+                                        <td>00:01:00</td>
+                                        <td>00:01:00</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>00:01:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <center><input class="form-check-input" type="checkbox" id="Administrador">
+                                            </center>
+                                        </td>
+                                        <td>00:01:00</td>
+                                        <td>00:01:00</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>00:01:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <center><input class="form-check-input" type="checkbox" id="Administrador">
+                                            </center>
+                                        </td>
+                                        <td>00:01:00</td>
+                                        <td>00:01:00</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>02/08/2011 - 03:34:01 p.m</td>
+                                        <td>00:01:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="wrapperInputs">
-                            <center>
-                                <button class="buttonEuro mr-1" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Exportar
-                                    a CSV</button>
-                                <button class="buttonEuro mb-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Exportar
-                                    a PDF</button>
-                            </center>
+                            <button type="submit" class="buttonEuro right" data-bs-toggle="modal"
+                                data-bs-target="#modificarContadores">Modificar</button>
+                            <button class="buttonEuro right" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                style="margin: 0px 3px;">Exportar a PDF</button>
+                            <button class="buttonEuro right" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Exportar a CSV</button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +258,7 @@
             © 2021 Eurotrancitura. Sistema de Gestión OEE de planta. Powered by Grupo AC
         </footer>
     </section>
-
+    <!-- Modal Exportar -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -267,7 +302,93 @@
             </div>
         </div>
     </div>
-
+    <!-- Modal Modificar -->
+    <div class="modal fade" id="modificarContadores" tabindex="-1" role="dialog"
+        aria-labelledby="modificarContadoresLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="min-width: 700px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modificarContadoresLabel">Modificar registro de velocidad</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrapperInputs mb-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="inputName" for="fechaInicio">Equipo</label>
+                                        <input value="678" class="selectEuro dis" disabled>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="inputName" for="fechaInicio">Nombre</label>
+                                        <input type="text" value="Ds Basic Seat Turn 1" class="selectEuro dis" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapperInputs mb-3">
+                                <div class="col-md-6">
+                                    <label class="inputName bordersTop" style="width: 55%;">Diseño de velocidad</label>
+                                </div>
+                                <div class="modalCont">
+                                    <div class="wrapperInputs" style="padding: 6px;">
+                                        <label class="inputName" style="width: 19.2%;">Nombre</label>
+                                        <input type="text" value="Lorem Ipsum / Empaque / Pasta Larga / Empacadora 02"
+                                            disabled class="selectEuro dis" style="width: 80.8%;">
+                                    </div>
+                                    <div class="wrapperInputs" style="padding: 6px;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="inputName" for="fechaInicio">Valores</label>
+                                                <input value="300" type="number" class="inputEuro" disabled>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input value="Unidad / Minuto" disabled class="selectEuro dis borderAll width">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapperInputs mb-3">
+                                <div class="col-md-6">
+                                    <label class="inputName bordersTop" style="width: 55%;">Intervalo de tiempo</label>
+                                </div>
+                                <div class="modalCont">
+                                    <div class="wrapperInputs" style="padding: 6px;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="inputName" for="fechaInicio">Fecha de inicio</label>
+                                                <input type="date" class="selectEuro dis" disabled>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="inputName" for="fechaInicio">Fecha final</label>
+                                                <input type="date" class="inputEuro">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapperInputs mb-3">
+                                <div class="col-md-6">
+                                    <label class="inputName bordersTop" style="width: 55%;">Comentarios</label>
+                                </div>
+                                <div class="modalCont">
+                                    <div class="wrapperInputs" style="padding: 6px;">
+                                        <textarea class="inputEuro width borderAll" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapperInputs">
+                        <center>
+                            <button type="button" class="buttonEuro">Guardar</button>
+                            <button type="button" class="buttonEuro" data-bs-dismiss="modal">Cancelar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -52,7 +52,7 @@
     <aside class="keep">
         <ul>
             <li>
-                <a href="./Equipos">
+                <a href="./Equipos.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-01.png" alt="">
                     Equipos
                 </a>
@@ -64,43 +64,43 @@
                 </a>
             </li>
             <li>
-                <a href="./GestionUsuarios.html">
+                <a href="./GestionUsuarios.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-03.png" alt="">
                     Gestión de usuarios
                 </a>
             </li>
             <li>
-                <a href="./Eficiencia.html">
+                <a href="./Eficiencia.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-04.png" alt="">
                     Eficiencia de los equipos
                 </a>
             </li>
             <li>
-                <a href="./Analisis.html">
+                <a href="./Analisis.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-05.png" alt="">
                     Indicadores de negocio
                 </a>
             </li>
             <li>
-                <a href="./TableroControl.html">
+                <a href="./TableroControl.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-06.png" alt="">
                     Interfaz de operario
                 </a>
             </li>
             <li>
-                <a href="./Reports.html">
+                <a href="./Reports.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-07.png" alt="">
                     Reportes
                 </a>
             </li>
             <li>
-                <a href="./CargaChecksheets.html">
+                <a href="./CargaChecksheets.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-08.png" alt="">
                     Carga de Checksheets
                 </a>
             </li>
             <li>
-                <a href="./Configuracion.html">
+                <a href="./Configuracion.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-09.png" alt="">
                     Configuración
                 </a>
@@ -112,7 +112,7 @@
             <div class="container-fluit">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="color: #007878;">Tablero de monitoreo de línea</h2>
+                        <h2 style="color: #007878;">Gráfica de velocidad ideal</h2>
                     </div>
                     <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
@@ -150,26 +150,41 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-9 mb-2">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="contrasena">Seleccionar
+                                                        contadores</label>
+                                                    <select name="rol" id="rol" class="selectEuro">
+                                                        <option value="Administrador">Contador 1</option>
+                                                        <option value="Supervisor">Contador 2</option>
+                                                        <option value="Operario">Contador 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="wrapperInputs">
+                                                    <label class="inputName" for="contrasena">Seleccionar
+                                                        Equipos</label>
+                                                    <select name="rol" id="rol" class="selectEuro">
+                                                        <option value="Administrador">Equipo 1</option>
+                                                        <option value="Supervisor">Equipo 2</option>
+                                                        <option value="Operario">Equipo 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
-                            <div class="boxCon">
-                                <div class="wrapperInputs">
-                                    <label class="inputName borderAll left" style="font-size: 20px;">Prensa 1</label>
-                                    <button type="submit" class="buttonEuro right" style="margin-right:2px;">Selecionar KPIs</button>
-                                    <center><img src="./images/pan/Control.png" style="width: 100%;" alt=""></center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-bottom: 8px;">
-                            <div class="boxCon">
-                                <div class="wrapperInputs">
-                                    <label class="inputName borderAll left" style="font-size: 20px;">Prensa 2</label>
-                                    <button type="submit" class="buttonEuro right" style="margin-right:2px;">Selecionar KPIs</button>
-                                    <center><img src="./images/pan/Control.png" style="width: 100%;" alt=""></center>
-                                </div>
+                            <div class="wrapperInputs">
+                                <center><img src="./images/pan/Velocidad.png" style="width: 100%;" alt=""></center>
                             </div>
                         </div>
                     </div>
@@ -180,7 +195,6 @@
             © 2021 Eurotrancitura. Sistema de Gestión OEE de planta. Powered by Grupo AC
         </footer>
     </section>
-
 </body>
 
 </html>

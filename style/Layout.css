@@ -280,7 +280,7 @@ footer {
   text-align: center;
   padding: 6px 0px 0px 0px;
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   height: auto;
   width: 100%;
   height: 34px;
@@ -319,10 +319,11 @@ footer {
   border-radius: 0px 6px 6px 0px;
   background: white;
   float: left;
+  text-align: center;
   color: #000;
   width: 60%;
   font-size: 12px;
-  padding: 0.5px 0px 1px 2px;
+  padding: 2.5px 0px 3px 2px;
   border-style: none;
   min-height: 20px;
 }
@@ -330,10 +331,11 @@ footer {
   border-radius: 0px 6px 6px 0px;
   background: #c2fff3;
   float: left;
+  text-align: center;
   color: #007878;
   width: 60%;
   font-size: 12px;
-  padding: 0.5px 0px 1px 2px;
+  padding: 2px 0px 3.5px 2px;
   border-style: none;
 }
 .wrapperInputs .inputName {
@@ -345,7 +347,8 @@ footer {
   text-decoration: none;
   border-style: none;
   color: white;
-  padding: 0.5px 0px 1px 2px;
+  text-align: center;
+  padding: 2.5px 0px 3px 2px;
 }
 .wrapperInputs .buttonEuro {
   color: white;
@@ -366,7 +369,7 @@ footer {
 }
 .boxCon .wrapperInputs .inputName,
 .boxCon .wrapperInputs .selectEuro {
-  padding: 1.5px 0px 4px 5px !important;
+  /* padding: 1.5px 0px 4px 5px !important; */
 }
 aside .iconMenu {
   margin: 6% 24px 6% 0px;
@@ -404,12 +407,12 @@ td .color {
 }
 .dis {
   background: #007878 !important;
-  color: #fff !important;
+  color: #c2fff3 !important;
 }
 .cuadroKPIs {
   background: #007878;
   color: #fff;
-  font-size: 34px;
+  font-size: 100%;
   border-radius: 6px;
   font-weight: bold;
   text-align: center;
@@ -419,4 +422,17 @@ td .color {
   justify-content: center;
   height: 80px;
   margin: 9px auto;
+}
+.modalCont {
+  border-radius: 0px 6px 6px 6px;
+  background: #c2fff3;
+  float: left;
+  color: #007878;
+  width: 100%;
+  font-size: 12px;
+  padding: 2px;
+  border-style: none;
+}
+.gray {
+  background: #d3eae4 !important;
 }

@@ -64,43 +64,43 @@
                 </a>
             </li>
             <li>
-                <a href="./GestionUsuarios.html">
+                <a href="./GestionUsuarios.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-03.png" alt="">
                     Gestión de usuarios
                 </a>
             </li>
             <li>
-                <a href="./Eficiencia.html">
+                <a href="./Eficiencia.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-04.png" alt="">
                     Eficiencia de los equipos
                 </a>
             </li>
             <li>
-                <a href="./Analisis.html">
+                <a href="./Analisis.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-05.png" alt="">
                     Indicadores de negocio
                 </a>
             </li>
             <li>
-                <a href="./TableroControl.html">
+                <a href="./TableroControl.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-06.png" alt="">
                     Interfaz de operario
                 </a>
             </li>
             <li>
-                <a href="./Reports.html">
+                <a href="./Reports.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-07.png" alt="">
                     Reportes
                 </a>
             </li>
             <li>
-                <a href="./CargaChecksheets.html">
+                <a href="./CargaChecksheets.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-08.png" alt="">
                     Carga de Checksheets
                 </a>
             </li>
             <li>
-                <a href="./Configuracion.html">
+                <a href="./Configuracion.aspx">
                     <img class="iconMenu" src="./images/iconos_inactivos-09.png" alt="">
                     Configuración
                 </a>
@@ -112,7 +112,7 @@
             <div class="container-fluit">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="color: #007878;">Registro de contadores</h2>
+                        <h2 style="color: #007878;">Registro de velocidad inicial</h2>
                     </div>
                     <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
@@ -198,15 +198,11 @@
                                 <thead>
                                     <tr>
                                         <th scope="col"></th>
-                                        <th scope="col">Linea</th>
-                                        <th scope="col">Equipo</th>
-                                        <th scope="col">Nombre contador</th>
-                                        <th scope="col">Valor de contador</th>
-                                        <th scope="col">Unidad de medida</th>
+                                        <th scope="col">Nombre de velocidad</th>
+                                        <th scope="col">Valor de velocidad</th>
                                         <th scope="col">Tiempo inicial</th>
                                         <th scope="col">Tiempo final</th>
-                                        <th scope="col">Duración</th>
-                                        <th scope="col">Comentario</th>
+                                        <th scope="col">Comentarios</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -215,14 +211,10 @@
                                             <center><input class="form-check-input" type="checkbox" id="Administrador">
                                             </center>
                                         </td>
-                                        <td>S1 ERROR</td>
-                                        <td>00:01:00</td>
-                                        <td>00:01:00</td>
                                         <td>00:01:00</td>
                                         <td>00:01:00</td>
                                         <td>02/08/2011 - 03:34:01 p.m</td>
                                         <td>02/08/2011 - 03:34:01 p.m</td>
-                                        <td>00:01:00</td>
                                         <td>00:01:00</td>
                                     </tr>
                                     <tr>
@@ -230,14 +222,10 @@
                                             <center><input class="form-check-input" type="checkbox" id="Administrador">
                                             </center>
                                         </td>
-                                        <td>S1 ERROR</td>
-                                        <td>00:01:00</td>
-                                        <td>00:01:00</td>
                                         <td>00:01:00</td>
                                         <td>00:01:00</td>
                                         <td>02/08/2011 - 03:34:01 p.m</td>
                                         <td>02/08/2011 - 03:34:01 p.m</td>
-                                        <td>00:01:00</td>
                                         <td>00:01:00</td>
                                     </tr>
                                     <tr>
@@ -245,14 +233,10 @@
                                             <center><input class="form-check-input" type="checkbox" id="Administrador">
                                             </center>
                                         </td>
-                                        <td>S1 ERROR</td>
-                                        <td>00:01:00</td>
-                                        <td>00:01:00</td>
                                         <td>00:01:00</td>
                                         <td>00:01:00</td>
                                         <td>02/08/2011 - 03:34:01 p.m</td>
                                         <td>02/08/2011 - 03:34:01 p.m</td>
-                                        <td>00:01:00</td>
                                         <td>00:01:00</td>
                                     </tr>
                                 </tbody>
@@ -324,14 +308,26 @@
         <div class="modal-dialog" role="document" style="min-width: 700px;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modificarContadoresLabel">Crear paro programado</h5>
+                    <h5 class="modal-title" id="modificarContadoresLabel">Modificar registro de velocidad</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="wrapperInputs mb-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="inputName" for="fechaInicio">Equipo</label>
+                                        <input value="678" class="selectEuro dis" disabled>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="inputName" for="fechaInicio">Nombre</label>
+                                        <input type="text" value="Ds Basic Seat Turn 1" class="selectEuro dis" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapperInputs mb-3">
                                 <div class="col-md-6">
-                                    <label class="inputName bordersTop" style="width: 55%;">Equipo</label>
+                                    <label class="inputName bordersTop" style="width: 55%;">Diseño de velocidad</label>
                                 </div>
                                 <div class="modalCont">
                                     <div class="wrapperInputs" style="padding: 6px;">
@@ -339,22 +335,14 @@
                                         <input type="text" value="Lorem Ipsum / Empaque / Pasta Larga / Empacadora 02"
                                             disabled class="selectEuro dis" style="width: 80.8%;">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="wrapperInputs mb-3">
-                                <div class="col-md-6">
-                                    <label class="inputName bordersTop" style="width: 55%;">Contador</label>
-                                </div>
-                                <div class="modalCont">
                                     <div class="wrapperInputs" style="padding: 6px;">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label class="inputName" for="fechaInicio">Nombre</label>
-                                                <input value="U Totales" class="selectEuro dis" disabled>
+                                                <label class="inputName" for="fechaInicio">Valores</label>
+                                                <input value="300" type="number" class="inputEuro" disabled>
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="inputName" for="fechaInicio">Valores</label>
-                                                <input type="number" class="inputEuro">
+                                                <input value="Unidad / Minuto" disabled class="selectEuro dis borderAll width">
                                             </div>
                                         </div>
                                     </div>
@@ -362,7 +350,7 @@
                             </div>
                             <div class="wrapperInputs mb-3">
                                 <div class="col-md-6">
-                                    <label class="inputName bordersTop" style="width: 55%;">Contador</label>
+                                    <label class="inputName bordersTop" style="width: 55%;">Intervalo de tiempo</label>
                                 </div>
                                 <div class="modalCont">
                                     <div class="wrapperInputs" style="padding: 6px;">
@@ -373,7 +361,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="inputName" for="fechaInicio">Fecha final</label>
-                                                <input type="date" class="selectEuro dis" disabled>
+                                                <input type="date" class="inputEuro">
                                             </div>
                                         </div>
                                     </div>

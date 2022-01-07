@@ -309,8 +309,8 @@ caption {
 }
 
 th {
-  background: #3cb4a5 !important;
   color: white;
+  background: #3cb4a5 !important;
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
@@ -322,6 +322,9 @@ tr,
 td,
 th {
   text-align: center;
+  font-size: 13px;
+  align-items: center;
+  align-content: center;
   border-color: inherit;
   border-style: solid;
   border-left: 1px solid white;
@@ -2112,7 +2115,7 @@ progress {
 }
 
 .table-dark {
-  --bs-table-bg: #212529;
+  --bs-table-bg: #d3eae4;
   --bs-table-striped-bg: #2c3034;
   --bs-table-striped-color: #fff;
   --bs-table-active-bg: #373b3e;
