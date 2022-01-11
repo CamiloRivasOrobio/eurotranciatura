@@ -326,6 +326,7 @@ footer {
   padding: 2.5px 0px 3px 2px;
   border-style: none;
   min-height: 20px;
+  height: 24px;
 }
 .wrapperInputs .selectEuro {
   border-radius: 0px 6px 6px 0px;
@@ -337,11 +338,13 @@ footer {
   font-size: 12px;
   padding: 2px 0px 3.5px 2px;
   border-style: none;
+  height: 24px;
 }
 .wrapperInputs .inputName {
   border-radius: 6px 0px 0px 6px;
   background: #3cb4a5;
   float: left;
+  height: 24px;
   width: 40%;
   font-size: 12px;
   text-decoration: none;
@@ -435,4 +438,18 @@ td .color {
 }
 .gray {
   background: #d3eae4 !important;
+}
+.linVertical {
+  width: 97%;
+  height: 1px;
+  background: white;
+  margin: 4px auto;
+}
+.inputName .stateCol {
+  width: 40%;
+  padding: 5px;
+  margin: 0px 4px 0px 0px;
+  background: red;
+  font-size: 13px;
+  float: right;
 }
