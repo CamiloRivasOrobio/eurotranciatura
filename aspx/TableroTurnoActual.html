@@ -16,7 +16,6 @@
 
 <body>
     <header class="pr">
-        <span class="menu"><i class="material-icons" style="font-size: 40px !important;">menu</i></span>
         <img src="./images/LogoEuro.png" alt="" class="logoEuro">
         <div class="infoUser">
             <div class="row">
@@ -49,18 +48,99 @@
             </div>
         </div>
     </header>
-    <aside class="keep">
-        <ul>
+    <aside class="keep overflow-auto" id="style-3">
+        <ul style="margin-bottom:10px;">
             <li>
-                <a href="./Equipos">
+                <a class="equipos">
                     <img class="iconMenu" src="./images/iconos_inactivos-01.png" alt="">
                     Equipos
+                    <div class="menu-arbol bordersBottom overflow-auto" id="style-3">
+                        <ul class="tree">
+                            <li class="equipos-li">
+                                <input type="checkbox" checked="checked" id="c1" />
+                                <label class="tree_label" for="c1">Planta 1</label>
+                                <ul>
+                                    <li>
+                                        <span for="c2" class="tree_label">Linea 1</span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked="checked" id="c2" />
+                                        <label for="c2" class="tree_label">Linea 2A</label>
+                                        <ul>
+                                            <li><span class="tree_label">Prensa 04</span></li>
+                                            <li><span class="tree_label">Prensa 05</span></li>
+                                            <li><span class="tree_label">Prensa 06</span></li>
+                                            <li><span class="tree_label">Prensa 07</span></li>
+                                            <li><span class="tree_label">Prensa 08</span></li>
+                                            <li><span class="tree_label">Prensa 09</span></li>
+                                            <li><span class="tree_label">Prensa 12</span></li>
+                                            <li><span class="tree_label">Prensa 16</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked="checked" id="c4" />
+                                        <label for="c4" class="tree_label">Linea 2A</label>
+                                        <ul>
+                                            <li><span class="tree_label">Prensa 01</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" checked="checked" id="c2" />
+                                        <label for="c2" class="tree_label">Línea 3</label>
+                                        <ul>
+                                            <li><span class="tree_label">Farpesse</span></li>
+                                            <li><span class="tree_label">ITAL1</span></li>
+                                            <li><span class="tree_label">Prensa 13</span></li>
+                                            <li><span class="tree_label">Prensa 14</span></li>
+                                            <li><span class="tree_label">Prensa 15</span></li>
+                                            <li><span class="tree_label">Prensa09</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="equipos-li">
+                                <input type="checkbox" id="c5" />
+                                <label class="tree_label" for="c5">Planta 2</label>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="c6" />
+                                        <label for="c6" class="tree_label">Línea 10</label>
+                                        <ul>
+                                            <li><span class="tree_label">Prensa-G09</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="c7" />
+                                        <label for="c7" class="tree_label">Línea 11</label>
+                                        <ul>
+                                            <li><span class="tree_label">Prensa-G10</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="c8" />
+                                        <label for="c8" class="tree_label">Línea 9</label>
+                                        <ul>
+                                            <li><span class="tree_label">IMM_rotor
+                                                </span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a class="equipos">
                     <img class="iconMenu" src="./images/iconos_inactivos-02.png" alt="">
-                    Buscar
+                    <input type="text" placeholder="Palabras clave" class="inputEuro borderAll" style="width: 215px;">
+                    <div class="menu-all bordersBottom">
+                        <div class="wrapperInputs mt-3 mb-3">
+                            <center>
+                                <button type="button" class="buttonEuro">Buscar</button>
+                            </center>
+                        </div>
+                    </div>
                 </a>
             </li>
             <li>
@@ -70,15 +150,47 @@
                 </a>
             </li>
             <li>
-                <a href="./Eficiencia.aspx">
+                <a class="equipos">
                     <img class="iconMenu" src="./images/iconos_inactivos-04.png" alt="">
                     Eficiencia de los equipos
+                    <div class="menu-all bordersBottom">
+                        <div class="wrapperInputs" style="margin: 5px;">
+                            <button onclick="window.location='./TableroControl.aspx'" class="menuInt">Tablero del
+                                control de máquina</button>
+                            <button onclick="window.location='./TableroEstadoMaquina.aspx'" class="menuInt">Tablero de
+                                estado de máquina</button>
+                            <button onclick="window.location='./TableroMonitoreoLinea.aspx'" class="menuInt">Tablero de
+                                monitoreo de línea</button>
+                            <button onclick="window.location='./TiemposInactividad.aspx'" class="menuInt">Gestión de
+                                tiempos de inactividad</button>
+                            <button onclick="window.location='./ContadoresTotalizados.aspx'" class="menuInt">Gráfica de
+                                contadores totalizados</button>
+                            <button onclick="window.location='./RegistroContadores.aspx'" class="menuInt">Registro de
+                                contadores</button>
+                            <button onclick="window.location='./GraficaVelocidad.aspx'" class="menuInt">Gráfica de
+                                velocidad ideal</button>
+                            <button onclick="window.location='./VelocidadIdeal.aspx'" class="menuInt">Registro de
+                                velocidad ideal</button>
+                            <button onclick="window.location='./TableroTurnoActual.aspx'" class="menuInt">Tablero de
+                                operación turno actual
+                        </div>
+                    </div>
                 </a>
             </li>
             <li>
-                <a href="./Analisis.aspx">
+                <a class="equipos">
                     <img class="iconMenu" src="./images/iconos_inactivos-05.png" alt="">
-                    Indicadores de negocio
+                    Análisis de Indicadores de negocio
+                    <div class="menu-all bordersBottom">
+                        <div class="wrapperInputs left" style="margin: 5px;">
+                            <button onclick="window.location='./TableroIndicadores.aspx'" class="menuInt">Tablero de
+                                indicadores</button>
+                            <button onclick="window.location='./GestionValores.aspx'" class="menuInt">Gestión de valores
+                                límite (Rango)</button>
+                            <button onclick="window.location='./ComparacionEquipo.aspx'" class="menuInt">Comparación de
+                                equipos</button>
+                        </div>
+                    </div>
                 </a>
             </li>
             <li>
@@ -88,9 +200,18 @@
                 </a>
             </li>
             <li>
-                <a href="./Reports.aspx">
+                <a class="equipos">
                     <img class="iconMenu" src="./images/iconos_inactivos-07.png" alt="">
                     Reportes
+                    <div class="menu-all bordersBottom">
+                        <div class="wrapperInputs left" style="margin: 5px;">
+                            <button onclick="window.location='./ReportesOEE.aspx'" class="menuInt">Reportes
+                                OEE</button>
+                            <button onclick="window.location='./RegistroEventos.aspx'" class="menuInt">Registro de
+                                eventos</button>
+                            <button onclick="window.location='./Reportes.aspx'" class="menuInt">Reportes</button>
+                        </div>
+                    </div>
                 </a>
             </li>
             <li>
@@ -123,14 +244,16 @@
                                             <div class="col-sm-4">
                                                 <div class="wrapperInputs">
                                                     <label class="inputName" for="contrasena">Turno</label>
-                                                    <input type="text" value="Turno1" disabled class="selectEuro dis" id="fechaInicio" type="text">
+                                                    <input type="text" value="Turno1" disabled class="selectEuro dis"
+                                                        id="fechaInicio" type="text">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="wrapperInputs">
-                                            <a href="./SeleccionarKPIs.aspx" type="submit" class="buttonEuro right">Seleccionar KPIs</a>
+                                            <a href="./SeleccionarKPIs.aspx" type="submit"
+                                                class="buttonEuro right">Seleccionar KPIs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +263,9 @@
                     <div class="col-sm-12">
                         <div class="row" style="margin-bottom: 8px;">
                             <div class="wrapperInputs">
-                                <center><img src="./images/pan/Control.png" style="width: 100%;" alt=""></center>
+                                <div class="boxCon">
+                                    <center><img src="./images/pan/grafult.png" style="width: 100%;" alt=""></center>
+                                </div>
                             </div>
                         </div>
                     </div>

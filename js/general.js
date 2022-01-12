@@ -1,10 +1,4 @@
 $(document).ready(function () {
-    $(".menu").click(function () {
-        $(".keep").toggleClass("wi");
-        $(".pr").toggleClass("wi");
-        $(".main").toggleClass("wi");
-        $(".footer").toggleClass("wi");
-    });
     $("#modificarTiempos").click(function () {
         $("#paros").toggleClass("d-none");
         $("#modificar").toggleClass("d-none");
