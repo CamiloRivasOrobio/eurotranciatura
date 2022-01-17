@@ -15,17 +15,18 @@ body {
   height: auto;
   margin: 0;
   margin-bottom: 40px;
+  overflow-x: hidden;
 }
 header {
   background: #3cb4a5;
-  padding: 1% 1%;
-  height: 85px;
+  padding: 10px 10px 10px 50px;
+  /* height: 85px; */
   /* box-shadow: 0px -8px 25px #6d6d6d; */
   /* position: fixed; */
   top: 0;
   right: 0;
   float: right;
-  width: 96.1%;
+  width: 99.1%;
   z-index: 991;
 }
 header .logoEuro {
@@ -100,21 +101,21 @@ aside ul li:hover {
   /* box-shadow: inset 0px 0px 77px #1a4142; */
 }
 
-aside ul li.equipos-li:hover{
+aside ul li.equipos-li:hover {
   background: transparent !important;
   border-radius: 6px;
   width: 97%;
   /* box-shadow: inset 0px 0px 77px #1a4142; */
 }
 
-aside ul li.equipos-li ul:hover  {
+aside ul li.equipos-li ul:hover {
   background: transparent !important;
   border-radius: 6px;
   width: 97%;
   /* box-shadow: inset 0px 0px 77px #1a4142; */
 }
 
-aside ul li.equipos-li  li:hover {
+aside ul li.equipos-li li:hover {
   background: transparent !important;
   border-radius: 6px;
   width: 97%;
@@ -219,6 +220,7 @@ aside.keep.width ul li a span.notif {
 .infoUser li a {
   background-color: #007878;
   color: #fff;
+  /* border-top: 10px solid black; */
   text-decoration: none;
   padding: 12px 12px 12px 0px;
   display: block;
@@ -233,6 +235,7 @@ aside.keep.width ul li a span.notif {
   display: none;
   position: absolute;
   min-width: 140px;
+  /* border: 3px solid; */
 }
 
 .infoUser li:hover > ul {
@@ -369,7 +372,7 @@ aside .iconMenu {
   border-radius: 6px !important;
 }
 .left {
-  float: left;
+  /* float: left; */
 }
 .right {
   float: right;
@@ -386,6 +389,8 @@ td .color {
 .overEuro {
   width: 100%;
   height: 165px;
+  background: #c2fff3;
+  color: #02787f;
 }
 .dis {
   background: #007878 !important;
@@ -423,6 +428,12 @@ td .color {
   height: 1px;
   background: white;
   margin: 4px auto;
+}
+.linHorizontal {
+  width: 1px;
+  height: 98%;
+  background: white;
+  margin: 6px auto;
 }
 .inputName .stateCol {
   width: 40%;
@@ -638,7 +649,7 @@ label {
   width: 100%;
 }
 
-ul li span {
+ul.tree li span {
   background: #3cb4a5 !important;
   border-radius: 50px;
   padding: 4px 8px;
@@ -650,22 +661,14 @@ span:hover {
   padding: 4px 8px;
   width: 100%;
 }
-
-#style-1::-webkit-scrollbar {
-  width: 12px;
-  background-color: #f5f5f5;
+#style-2::-webkit-scrollbar {
+  width: 6px;
+  background-color: #007878;
 }
 
-#style-1::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #555;
+#style-2::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
 }
-
-#style-3::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
-}
-
 #style-3::-webkit-scrollbar {
   width: 6px;
   background-color: #f5f5f5;
