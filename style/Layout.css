@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
 }
 html {
   min-height: 100% !important;
@@ -20,9 +22,6 @@ body {
 header {
   background: #3cb4a5;
   padding: 10px 10px 10px 50px;
-  /* height: 85px; */
-  /* box-shadow: 0px -8px 25px #6d6d6d; */
-  /* position: fixed; */
   top: 0;
   right: 0;
   float: right;
@@ -690,4 +689,38 @@ button.menuInt {
 button.menuInt:hover {
   background-color: #007878;
   color: white;
+}
+
+/* SELECT */
+.multi_select {
+  width: 60% !important;
+  float: left;
+}
+button.btn.dropdown-toggle.btn-light.bs-placeholder {
+  color: #257878;
+}
+
+.btn-light:hover {
+  color: #257878;
+  background-color: #c2fff3;
+  border-color: #dae0e5;
+}
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+.btn-light {
+  background-color: #c2fff3 !important;
+  border-color: #c2fff3 !important;
+  border-radius: 0px 6px 6px 0px;
+  height: 23px;
+  margin-top: -7px;
+}
+.bootstrap-select .dropdown-toggle .filter-option {
+  height: auto !important;
+  font-size: 12px;
+  text-align: center;
+}
+.inner .show {
+  max-height: 140px;
 }

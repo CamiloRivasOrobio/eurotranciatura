@@ -3,6 +3,9 @@ $(document).ready(function () {
         $("#paros").toggleClass("d-none");
         $("#modificar").toggleClass("d-none");
     });
+    $('.multi_select').selectpicker();
+    $('.inner.show').attr('id', 'style-2');
+
 });
 function getDay(day) {
     var d = new Date();
@@ -39,13 +42,16 @@ window.onload = function () {
 }
 
 function cargarDatos() {
+    var children=$('#equiposList');
     var directorioActivo = [
         { 'Id': '101', 'Name': 'Antonio Enrique Alvarado' },
         { 'Id': '103', 'Name': 'Enrique David Ardila-' },
         { 'Id': '104', 'Name': 'David Jose Anzola' },
     ];
     directorioActivo.sort();
-    addOptions("dirActivo", directorioActivo)
+    for (var i = 0; i < directorioActivo.length; i++) {
+        children.append("<option value='" + directorioActivo[i].Id + "'>" + directorioActivo[i].Name + "</option>");
+    }
 }
 function addOptions(domElement, array) {
     var select = document.getElementsByName(domElement)[0];
